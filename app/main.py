@@ -6,7 +6,7 @@ from app.people.customer import Customer
 
 def cinema_visit(
         customers: list,
-        hall_number: int,
+        number: int,
         cleaner: str,
         movie: str
 ) -> None:
@@ -16,7 +16,7 @@ def cinema_visit(
         CinemaBar.sell_product(cus1.food, cus1)
         my_list.append(cus1)
 
-    hall_c = CinemaHall(hall_number)
+    hall_c = CinemaHall(number)
 
     name_cleaner = Cleaner(cleaner)
 
